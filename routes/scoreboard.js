@@ -1,9 +1,64 @@
 const express = require('express');
-const tableData = require('../data');
+const _ = require('lodash');
 const requestData = require('../requests');
 const io = require('../socketUtils');
 
+
+function createUnit(id) {
+  const date = new Date();
+  const startTime = date.getHours();
+  const endTime = date.getHours() + 4;
+
+  const timeSlots = [
+    {
+      id: 'timeSlot-'+1,
+      startTime: startTime,
+      endTime: endTime,
+      status: 'Available',
+      controlledBy: 'KABQ'
+    },
+    {
+      id: 'timeSlot-'+2,
+      startTime: startTime + 6,
+      endTime: endTime + 6,
+      status: 'Available',
+      controlledBy: 'KABQ'
+    }
+  ];
+
+  const assets = [
+    {
+      id: 'asset-'+1,
+      timeSlots: _.cloneDeep(timeSlots)
+    },
+    {
+      id: 'asset-'+2,
+      timeSlots: _.cloneDeep(timeSlots)
+    }
+  ];
+
+  const unit = _.assign({}, {
+    id: 'unit-' + id,
+    cell: 'KABQ',
+    unit: 'Unit ' + id,
+    platform: 'F-16C',
+    missionType: 'ATK',
+    used: 4,
+    available: 15,
+    total: 19,
+    assets: assets
+  });
+
+  return unit;
+}
+
 function getScoreboardRouter() {
+  const tableData = [];
+  var i = 1;
+  for(i; i <= 15; i++) {
+    tableData.push(createUnit(i));
+  }
+
   const router = express.Router();
 
   router.get( '/', (req, res) => {
