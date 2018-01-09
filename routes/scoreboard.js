@@ -85,6 +85,24 @@ function getScoreboardRouter() {
     requestId++;
   });
 
+  router.put('/requests', (req, res) => {
+    if (!req.body.id || !req.body.status) {
+      res.send('error, need request ID and status');
+    } else {
+      const request = _.find(requestData, reqObject => reqObject.id === req.body.id);
+      if (!request) {
+        res.send('error, no request with that ID');
+      } else {
+        request.status = req.body.status;
+        res.send('success');
+
+        const socket = io.get();
+        socket.emit('scoreboard_requests_update', requestData);
+      }
+    }
+
+  });
+
   router.post( '/requests/1', (req, res) => {
     tableData[0] = {
       id: 1,
