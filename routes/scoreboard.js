@@ -59,6 +59,8 @@ function getScoreboardRouter() {
     tableData.push(createUnit(i));
   }
 
+  let requestId = 4;
+
   const router = express.Router();
 
   router.get( '/', (req, res) => {
@@ -67,6 +69,20 @@ function getScoreboardRouter() {
 
   router.get('/requests', (req, res) => {
     res.send(requestData);
+  });
+
+  router.post('/requests', (req, res) => {
+    const newRequest = req.body;
+    newRequest.id = requestId;
+    newRequest.inbound = true;
+    newRequest.received = new Date();
+    newRequest.status = 'Pending';
+
+    requestData.push(newRequest);
+    res.send('success');
+    const socket = io.get();
+    socket.emit('scoreboard_requests_update', requestData);
+    requestId++;
   });
 
   router.post( '/requests/1', (req, res) => {

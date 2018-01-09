@@ -8,8 +8,8 @@ const requests = [
     mission: 'ATK',
     start: 120700,
     end: 121300,
-    inbound: true,
     draft: false,
+    inbound: true,
     received: '11:30',
     status: 'Pending'
   },
@@ -22,8 +22,8 @@ const requests = [
     mission: 'AI',
     start: 120700,
     end: 121300,
-    inbound: false,
     draft: false,
+    inbound: false,
     sent: '13:00',
     status: 'Approved'
   },
@@ -36,8 +36,8 @@ const requests = [
     mission: 'ATK',
     start: 120700,
     end: 121300,
-    inbound: false,
     draft: true,
+    inbound: false,
     created: '08:00',
     status: 'Not Sent'
   }
