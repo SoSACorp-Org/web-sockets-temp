@@ -1,6 +1,7 @@
 const express = require('express');
 const _ = require('lodash');
 const requestData = require('../requests');
+const unitStatusSummaryData = require('../UnitStatusSummary');
 const io = require('../socketUtils');
 
 
@@ -64,7 +65,7 @@ function getScoreboardRouter() {
   const router = express.Router();
 
   router.get( '/', (req, res) => {
-    res.send(tableData);
+    res.send(unitStatusSummaryData);
   });
 
   router.get('/requests', (req, res) => {
@@ -74,7 +75,6 @@ function getScoreboardRouter() {
   router.post('/requests', (req, res) => {
     const newRequest = req.body;
     newRequest.id = requestId;
-    newRequest.inbound = true;
     newRequest.received = new Date();
     newRequest.status = 'Pending';
 
