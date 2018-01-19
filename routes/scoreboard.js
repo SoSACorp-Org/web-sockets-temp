@@ -78,7 +78,7 @@ function getScoreboardRouter() {
     _.forEach(req.body.reservations, (reservation) => {
       const sortieAssignment = _.find(req.body.unit.sortieAssignments, (assignment) => {
         const reserved = reservation.split('/');
-        return assignment.domainId === reserved[reserved.length -1];
+        return assignment.domainId === _.last(reserved);
       })
       const existingTurnWindow = _.find(newRequest.sorties, (sortie) => {
         return sortie.start === _.get(sortieAssignment, 'turnWindow.start', 'not equal') && sortie.end === _.get(sortieAssignment, 'turnWindow.end', 'not equal')
