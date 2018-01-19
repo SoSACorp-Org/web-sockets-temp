@@ -1,1313 +1,1131 @@
 const data = {
-  "domainObject": {
-    "@class": ".plan.UnitStatusSummaryImpl",
-    "domainId": "92d46fff5d7b4d5aac8f4baff4ee7930",
-    "units": [
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "386ba1ca8dfd4bd3a6619efa05a83db5",
-        "numSorties": 19,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "1090eb7897dd414fbe6622eb4ec7a9af",
-            "missionType": "ATK",
-            "numSorties": 7,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 2
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "8255119a317e436eabd5adcd18c7a37a",
-            "missionType": "ATK",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 1
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "e5ae350949b04303a0b1c4e90a4f75f1",
-            "missionType": "ATK",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 1
-          }
-        ],
-        "unit": "Unit1"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "19406831f8af46509c02cd9bc5895cc6",
-        "numSorties": 10,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "a59d57a292e346f383f3df6bd08dcfa3",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "6ee0dc809a9d43548cc29f9a3e253c9e",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "6b9d9372ae2241388f200c1fd4506baf",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 0
-          }
-        ],
-        "unit": "Unit2"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "c0bf3da46cff4dd1983d8e4fec9dcd68",
-        "numSorties": 12,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "6191822f23e74ce99ef56a718819e6d1",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 1
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "b4e2a7a310fb43f2be3341d34d1cac56",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 1
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "bf74e8bec3ca46dba4f063fa79a0c0e9",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 1
-          }
-        ],
-        "unit": "Unit3"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "185e98a73cba4f8dbe6ff36988f1e5b5",
-        "numSorties": 11,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "e382f6760a26472b930d884ff3f37f9e",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 2
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "9f827d8f20e445c0af272d1d9eb8a21d",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "756bac7f6ab74b0591e84b075ae740fe",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 0
-          }
-        ],
-        "unit": "Unit4"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "04c25870235a42f0abd244d3ef052042",
-        "numSorties": 11,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "517a57f2ca50461893261d470b5e567a",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 1
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "21ccffcccd0c43a2864a0360d02e7365",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 1
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "3899dc8424e546ab8fc4e4121d990732",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 1
-          }
-        ],
-        "unit": "Unit5"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "00711f9b1fd34986a2902107fb213529",
-        "numSorties": 9,
-        "ownedBy": "KSLC",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "63ff1b2bec18434bbb6e24784f2e8ef0",
-            "missionType": "AI",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 1
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "d992fb906b2543e3824507e534720e80",
-            "missionType": "AI",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "2e2c264d0e934e84bc73222939fa669d",
-            "missionType": "AI",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 0
-          }
-        ],
-        "unit": "Unit6"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "c87ada7758664acea832f2ce65da2562",
-        "numSorties": 12,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "718fe29aa88a4843a66dfbfc00920e34",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 3
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "1fd287e03fbf4b659daf6d6f3dcc7d5e",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 1
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "58b2f4eda8054846b4f41fe312424953",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 1
-          }
-        ],
-        "unit": "Unit7"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "4f4c151d6a53441c85e82985775459fc",
-        "numSorties": 15,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "61f2318b6b6d4721b685d997026f2b9a",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 4
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "ca8124fbbf7146b0b4c906f38a3ccb18",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 2
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "ab742fb2e0bf4cb6bbf2c58bc424ef63",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 2
-          }
-        ],
-        "unit": "Unit8"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "9315b7683b1e4c929c5b72f849b9823e",
-        "numSorties": 6,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "124426096fd34862b74b0ef2b8f6dccd",
-            "missionType": "ATK",
-            "numSorties": 2,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "6a2e3c7a151b443c9ed7393c58693f0a",
-            "missionType": "ATK",
-            "numSorties": 2,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "e3ffa5719df84427aaae6a689b3bf388",
-            "missionType": "ATK",
-            "numSorties": 2,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 0
-          }
-        ],
-        "unit": "Unit9"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "042a03949c0e4ef0ae7bc57d808ff7a8",
-        "numSorties": 6,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "14e8facd95e3482ca90c3909304f3ad9",
-            "missionType": "ATK",
-            "numSorties": 2,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "f034435bc37e4cd2bffcc8f40b566f1e",
-            "missionType": "ATK",
-            "numSorties": 2,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "f846b0e7ce2b44839f3cb6f3e166c546",
-            "missionType": "ATK",
-            "numSorties": 2,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 0
-          }
-        ],
-        "unit": "Unit10"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "0f1b4c80276c4fa6aa5b0cc0e419cd64",
-        "numSorties": 20,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "d6a1af82777245668b9662e2e2c08c73",
-            "missionType": "ATK",
-            "numSorties": 8,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 6
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "b23a4f9e752f4b54a5a2ea29b95cdc00",
-            "missionType": "ATK",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 5
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "6c438efc61584719a3ea86a308dfc19f",
-            "missionType": "ATK",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 5
-          }
-        ],
-        "unit": "Unit11"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "67c2f171442049d7863b00de77218820",
-        "numSorties": 31,
-        "ownedBy": "KLUF",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "397347b99f4e4367b396abf74ee660b8",
-            "missionType": "ATK",
-            "numSorties": 11,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 11
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "ce9e703dd8244f7295e71847be7d491c",
-            "missionType": "ATK",
-            "numSorties": 10,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 10
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "83550ec34d004de3b5495b0ed1b4299a",
-            "missionType": "ATK",
-            "numSorties": 10,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 10
-          }
-        ],
-        "unit": "Unit12"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "835edb5e946043588de5840ddb45b62f",
-        "numSorties": 23,
-        "ownedBy": "KLUF",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "6e441ea5b4824910b593fbed7a34726c",
-            "missionType": "ATK",
-            "numSorties": 9,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 9
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "f608cc4ce86f4acdb7aa288dbd53e625",
-            "missionType": "ATK",
-            "numSorties": 7,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 7
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "afa03c5f49b4455b92a6ea08b853eb44",
-            "missionType": "ATK",
-            "numSorties": 7,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 7
-          }
-        ],
-        "unit": "Unit13"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "35104ddb12144782a0ccb6ff19f44fbf",
-        "numSorties": 23,
-        "ownedBy": "NIKE",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "NIKE",
-            "domainId": "c21d44bdf4af46a5a947356a88ee417d",
-            "missionType": "ATK",
-            "numSorties": 9,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 9
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "NIKE",
-            "domainId": "e9644be6441140f4aa03e9ef2aabd0ce",
-            "missionType": "ATK",
-            "numSorties": 7,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 7
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "NIKE",
-            "domainId": "2097fac99e63489089d6dfb86b9d259f",
-            "missionType": "ATK",
-            "numSorties": 7,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 7
-          }
-        ],
-        "unit": "Unit14"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "fcd21ea0088f428396f4bc48203e9623",
-        "numSorties": 19,
-        "ownedBy": "NIKE",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "NIKE",
-            "domainId": "39fbd583aee046b7b09d6089a3575841",
-            "missionType": "ATK",
-            "numSorties": 7,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 7
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "NIKE",
-            "domainId": "f12a4a6aaf784c3bb6c8f6c30a267cd4",
-            "missionType": "ATK",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 6
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "NIKE",
-            "domainId": "25da6910eb264093a0f42d7511f99fd2",
-            "missionType": "ATK",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 6
-          }
-        ],
-        "unit": "Unit15"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "a20793b21d984d54aeb99f55f731e36e",
-        "numSorties": 17,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "41f1023e1ed44410b9204b7cfbb32220",
-            "missionType": "ATK",
-            "numSorties": 7,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 7
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "888d098829534e04abbf649855f9a47d",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 5
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "cd24efac492f4d1e914dcc2b942da187",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 5
-          }
-        ],
-        "unit": "Unit16"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "078a6d269999496ba00b9a2b41fb6512",
-        "numSorties": 17,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "1729b520964c46f99541e00943632c6b",
-            "missionType": "ATK",
-            "numSorties": 7,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 7
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "20191ff2571743e49e062a9773dc640c",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 5
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "e3be7f89188d42f68c8d3e353627062a",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 5
-          }
-        ],
-        "unit": "Unit17"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "58b9b6a961464731a5df02bb3cb046db",
-        "numSorties": 14,
-        "ownedBy": "KLUF",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "b2d5c5dd91064fe7bcd6d0d55056a538",
-            "missionType": "ATK",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 6
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "087355fcf2cd4b0d84287c8f9f53d6af",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 4
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "8fc35ea2cfa3478bbbcb7788e87108ba",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 4
-          }
-        ],
-        "unit": "Unit18"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "cd78ac430751495db2525cc2024ebffe",
-        "numSorties": 13,
-        "ownedBy": "KLUF",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "e35bcd0b728641a9b9e57acbb37fda31",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 5
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "8636ab626d524f56aa95cae2be5c4e70",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 4
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "da3a8cb046264f72a5d887053596c3e3",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 4
-          }
-        ],
-        "unit": "Unit19"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "c7ae1678bd81429c8edfe25df05ecf19",
-        "numSorties": 12,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "a58d0a825a094bbeb8f5c959003410a4",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 4
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "8f7e11a81e8c44ef8100109f9a2f6474",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 4
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "2df0476601544208bcfb7c9b78f76a08",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 4
-          }
-        ],
-        "unit": "Unit20"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "d3e93f796d98473e86d55e08b2e90f64",
-        "numSorties": 9,
-        "ownedBy": "KSLC",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "8aff666e198b407c9f04ad1633b020fe",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 3
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "dce0d63ee71348fcbe39acfae899598e",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 3
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "c3731dc60b8a4b1985e642b77ad0e505",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 3
-          }
-        ],
-        "unit": "Unit21"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "36c9e0002bc945ac97de89bb78e15ccd",
-        "numSorties": 9,
-        "ownedBy": "KSLC",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "07a54c7291784982b4df706aa3b724ad",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 3
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "5e77ed549d8a4d11b219a546a475d55c",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 3
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "f5e13156396a4fbe8051a652172467a2",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 3
-          }
-        ],
-        "unit": "Unit22"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "ab42fc62516e4ee09bcef2700f70ba20",
-        "numSorties": 9,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "2993006439a141a990b30ce064dfbc38",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 3
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "93da748268254266a64ee36c3a3d2cc6",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 3
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "01be561f14a04f04a874a99f9cd90d8c",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 3
-          }
-        ],
-        "unit": "Unit23"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "252df30bf87f4fc6a9bfb4280cf15e1f",
-        "numSorties": 9,
-        "ownedBy": "KABQ",
-        "platform": "F-16C",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "d495844154554478a459b3a5730bd285",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 3
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "99f7472c1324426788323b247ffc5b59",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 3
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KABQ",
-            "domainId": "65502bfcd6074f52921087e9db8a3c53",
-            "missionType": "ATK",
-            "numSorties": 3,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 3
-          }
-        ],
-        "unit": "Unit24"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "a546318e27504c0da6e11a3d52a54f3a",
-        "numSorties": 24,
-        "ownedBy": "KSLC",
-        "platform": "A10",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "b5bd989fa42946389cbe5e582c929a09",
-            "missionType": "ATK",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 2
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "42eb3fd28c574583aa319f6b95711de3",
-            "missionType": "CAS",
-            "numSorties": 5,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 4
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "a09390a5223b424dab36521bee7ec5fd",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KLUF",
-            "domainId": "4bd227d209544da9acf48490d72fc82f",
-            "missionType": "CAS",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 4
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "a7aa1aac64f043d69bc728014987f96c",
-            "missionType": "ATK",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 0
-          }
-        ],
-        "unit": "Unit25"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "fde31486ce724a0a87de55f4be7262e0",
-        "numSorties": 36,
-        "ownedBy": "KSLC",
-        "platform": "B1B",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "58b4c2d00eb044f7b370eac27421192a",
-            "missionType": "ATK",
-            "numSorties": 8,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 6
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "d1fa48836da3405ba4338962423f230e",
-            "missionType": "AI",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 6
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "69d9ba1e7cfb46a8bea84f9a4c3032fa",
-            "missionType": "ATK",
-            "numSorties": 8,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 4
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "b48664ce7f2d4d58b5a3aa3da2e0ebb7",
-            "missionType": "AI",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "KSLC",
-            "domainId": "9c0dd0712d144f3abc4904908590e615",
-            "missionType": "ATK",
-            "numSorties": 6,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 0
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "AI",
-            "domainId": "5d29ff59553d46c8a486b912ad4dc243",
-            "missionType": "ATK",
-            "numSorties": 4,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 2
-          }
-        ],
-        "unit": "Unit26"
-      },
-      {
-        "@class": ".UnitStatusImpl",
-        "domainId": "a70bda22060b439dabda788531cf6184",
-        "numSorties": 24,
-        "ownedBy": "NIKE",
-        "platform": "EA6B",
-        "sortieAssignments": [
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "NIKE",
-            "domainId": "08042a2a86e9482faa468a81a8dfa93e",
-            "missionType": "SEAD",
-            "numSorties": 8,
-            "turnWindow": {
-              "start": "2018-01-10T11:00:00Z",
-              "end": "2018-01-10T18:59:00Z"
-            },
-            "usedSorties": 6
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "NIKE",
-            "domainId": "de23eb26adf6448583dd099d0ad04c7b",
-            "missionType": "SEAD",
-            "numSorties": 8,
-            "turnWindow": {
-              "start": "2018-01-10T19:00:00Z",
-              "end": "2018-01-11T02:59:00Z"
-            },
-            "usedSorties": 4
-          },
-          {
-            "@class": ".SortieAssignmentImpl",
-            "cellId": "NIKE",
-            "domainId": "c9a190b25d5e4c63945f9e9c6bd9f45e",
-            "missionType": "SEAD",
-            "numSorties": 8,
-            "turnWindow": {
-              "start": "2018-01-11T03:00:00Z",
-              "end": "2018-01-11T10:59:00Z"
-            },
-            "usedSorties": 3
-          }
-        ],
-        "unit": "Unit27"
-      }
-    ]
+  "domainObject" : {
+    "@class" : ".plan.UnitStatusSummaryImpl",
+    "domainId" : "08a36877eb224efaabf5e813650871b3",
+    "units" : [ {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "1e94265d62594a4da5917a1b0a0db5ec",
+      "missionType" : "ATK",
+      "numSorties" : 19,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "752d6b87773b4f009620c2a8cb94c273",
+        "numSorties" : 7,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 2
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "41205b0355a644ec8de24585dd01bab5",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 1
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "deba314244404308afe2dccabbdb5b78",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 1
+      } ],
+      "unit" : "Unit1"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "f7c7cce091f248be87cbb57d816e4fea",
+      "missionType" : "ATK",
+      "numSorties" : 10,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "42ac1b9f40fe40c380a630dccc6d6214",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "ece4b709550f44adab58b088678bc011",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "eb0f783d257e413bb025a2b35f4d97ff",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 0
+      } ],
+      "unit" : "Unit2"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "54593bd10e684f3b9f737e4a20858cad",
+      "missionType" : "ATK",
+      "numSorties" : 12,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "8eb42490f96949879b759bdd26a1b69b",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 1
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "bdbfb7caf62042f097bae23ab219d33d",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 1
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "78dfef4d9c05452797cf62809d201347",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 1
+      } ],
+      "unit" : "Unit3"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "556a13d3943a49ba874f2af22aea2b48",
+      "missionType" : "ATK",
+      "numSorties" : 11,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "ed8a0fb0f54e4549960535a2a5e5e65c",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 2
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "feda2b9631394309a6f7b52f6bc59b28",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "cc49eb405b244d5099a54d7957b41b1d",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 0
+      } ],
+      "unit" : "Unit4"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "c9273d05d1124d8487aca27583cd1e43",
+      "missionType" : "ATK",
+      "numSorties" : 11,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "ea4f39d98c314874adaf0c9790334fd7",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 1
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "77146218d23d4f278942abbb5f4c3a03",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 1
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "11bbbae8de994a6991d1073b5841ac86",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 1
+      } ],
+      "unit" : "Unit5"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "fca22f69242c45bfac33a1f17e3088b5",
+      "missionType" : "AI",
+      "numSorties" : 9,
+      "ownedBy" : "KSLC",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "bd13160cdbb04928a4faeccfb5520599",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 1
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "295a461801e843b08b9725556c436742",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "ba1cc2cf090f4b8994d65450ff4886c4",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 0
+      } ],
+      "unit" : "Unit6"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "403b7633034e4e2b8bde07d83565ec7f",
+      "missionType" : "ATK",
+      "numSorties" : 12,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "4356e34a47054941bc7a5371c254767b",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 3
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "bc092ea6f035400f8bdd8712a94083a1",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 1
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "2a15ce22ffa14c0980748237bcab75ad",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 1
+      } ],
+      "unit" : "Unit7"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "e7f7c0357817451c9a93740427c52ccf",
+      "missionType" : "ATK",
+      "numSorties" : 15,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "22df118c217b4c4eacc3f495f9356c3e",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 4
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "9c944958d3414ddf971658e03f8b9604",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 2
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "776c515436a94e7ebd8b699163f616bb",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 2
+      } ],
+      "unit" : "Unit8"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "7577dc4c1eeb459aafa35b12dfe93668",
+      "missionType" : "ATK",
+      "numSorties" : 6,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "7e7519a1a10744e2a6fb8e09143a8302",
+        "numSorties" : 2,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "2e052fe89b8b4b988479eaa9c5f20533",
+        "numSorties" : 2,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "20ab988def4b49bb9f6fb200f1b536cb",
+        "numSorties" : 2,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 0
+      } ],
+      "unit" : "Unit9"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "ffb5977590de41a094f3666ea43063a4",
+      "missionType" : "ATK",
+      "numSorties" : 6,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "95343674db6d401b91c518196383766d",
+        "numSorties" : 2,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "3ca2538991d14ec1a9d1bce4dbf9ca13",
+        "numSorties" : 2,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "daa752fb457d45bfa5e22a7cd84d0c91",
+        "numSorties" : 2,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 0
+      } ],
+      "unit" : "Unit10"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "b81f01857a29494f99fdb2de92c8dc13",
+      "missionType" : "ATK",
+      "numSorties" : 20,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "fe4930b385a240fb947fc8856c31ad1d",
+        "numSorties" : 8,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 6
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "d38a898d336646c88fd17ba3992e5ecc",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 5
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "5a4ec71ab0044309889212ad8756e2e8",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 5
+      } ],
+      "unit" : "Unit11"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "cd437481cb57461c884d556260ebbfef",
+      "missionType" : "ATK",
+      "numSorties" : 31,
+      "ownedBy" : "KLUF",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "2720897ac139461999b8d2f37edb3315",
+        "numSorties" : 11,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 11
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "568ba852809d45e389b894ad67237c78",
+        "numSorties" : 10,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 10
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "2acc77b2f3c14e0c83bf52962094dda8",
+        "numSorties" : 10,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 10
+      } ],
+      "unit" : "Unit12"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "879062e0ebe941ce8a04b87e704dabfb",
+      "missionType" : "ATK",
+      "numSorties" : 23,
+      "ownedBy" : "KLUF",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "99e0d387e61241eeba2f115375d4c942",
+        "numSorties" : 9,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 9
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "e51ecfdfbd0f4af187b2cc0bb27975f2",
+        "numSorties" : 7,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 7
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "c2f3dfc9b8a745ec9341aa0ac2f94402",
+        "numSorties" : 7,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 7
+      } ],
+      "unit" : "Unit13"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "0dfa3c536dd14b148ac41804ffeeac1a",
+      "missionType" : "ATK",
+      "numSorties" : 23,
+      "ownedBy" : "NIKE",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "NIKE",
+        "domainId" : "c42c9ac6f99143b8be3dd12a9cf89c09",
+        "numSorties" : 9,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 9
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "NIKE",
+        "domainId" : "f4bc917c5ab64d44b1e4afa141ba1e5b",
+        "numSorties" : 7,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 7
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "NIKE",
+        "domainId" : "6de4210dce7e43e2b7ab3a405bd85001",
+        "numSorties" : 7,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 7
+      } ],
+      "unit" : "Unit14"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "b2ed8c1519014d1e9f1b4a6d6908f2f6",
+      "missionType" : "ATK",
+      "numSorties" : 19,
+      "ownedBy" : "NIKE",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "NIKE",
+        "domainId" : "8fdc62c4b7f446c59110dbc9143fd38c",
+        "numSorties" : 7,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 7
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "NIKE",
+        "domainId" : "3629e4e53fe345199fe4762047815504",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 6
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "NIKE",
+        "domainId" : "3a0229146d6c4582add89b1d84e8e43f",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 6
+      } ],
+      "unit" : "Unit15"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "863dadf4c4a0401d9426f326e318af2c",
+      "missionType" : "ATK",
+      "numSorties" : 17,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "74ba1372a3254c63b8eb90cec74e8a51",
+        "numSorties" : 7,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 7
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "522bc5ff112e47b997e04e1c70b299e5",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 5
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "e8af08737e934e25a369df6605d58d60",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 5
+      } ],
+      "unit" : "Unit16"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "5f86ab5e310747abac9f846b638e9587",
+      "missionType" : "ATK",
+      "numSorties" : 17,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "e5b6db47a6e54334a83cbb0869444799",
+        "numSorties" : 7,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 7
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "b5569ace1d2548c28e47f695e03440d1",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 5
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "b11c1113d4074b3b90c9b66dc139d547",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 5
+      } ],
+      "unit" : "Unit17"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "dc79d78cd1774c788bf771d26d2700b9",
+      "missionType" : "ATK",
+      "numSorties" : 14,
+      "ownedBy" : "KLUF",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "ff94a977c71f4293947a6be7e1d3e729",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 6
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "8f6fe7476ac14608a2591f1408f79c3f",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 4
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "f38b164247b2400fbc2fc4999492f692",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 4
+      } ],
+      "unit" : "Unit18"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "808e304b7a2348b6afd9aede00600933",
+      "missionType" : "ATK",
+      "numSorties" : 13,
+      "ownedBy" : "KLUF",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "92e37b47ff31438b8e847e7f6b0c2ee4",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 5
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "1d42ca95ded84ad9a639b93c22bcae41",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 4
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "e9ab14bcd14b4a19b6b458bca7361be2",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 4
+      } ],
+      "unit" : "Unit19"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "c93c2deecf1b4699919fbbdfd75ddc99",
+      "missionType" : "ATK",
+      "numSorties" : 12,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "7c14ad343851440fb4a93004812eab7f",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 4
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "69974f05e9434b3aae5aeab6936e6401",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 4
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "c8674d80a1a841f58359be60b05fe87f",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 4
+      } ],
+      "unit" : "Unit20"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "3f334ca64b474f85a31ad77e3784e0bb",
+      "missionType" : "ATK",
+      "numSorties" : 9,
+      "ownedBy" : "KSLC",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "e0f12e8c9ce34ef69c46391bad6b4f84",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 3
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "0be5bb19dbaf4bc9b308650c77ff47a9",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 3
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "2efb2354b4d64bffaeff36816f186098",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 3
+      } ],
+      "unit" : "Unit21"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "6c94b2a4203f4b899c8a5c59dd97ff20",
+      "missionType" : "ATK",
+      "numSorties" : 9,
+      "ownedBy" : "KSLC",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "287f224a2b134bf59ab31bbd161fb848",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 3
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "e96def4318a04b68a609704c33f4dbd1",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 3
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "8b4707858fb64390ac7e3f09efdb3356",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 3
+      } ],
+      "unit" : "Unit22"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "4519b9b2cd8643fe8963f16506568bbc",
+      "missionType" : "ATK",
+      "numSorties" : 9,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "749743ddb22644068e69e326b484a642",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 3
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "705abb4788cf4ab6a77fcb3a646d85a3",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 3
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "944f21bf69e54e0bbd9ee2a6beda8173",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 3
+      } ],
+      "unit" : "Unit23"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "6c6d638e9b154ca99ef4efb577cf463d",
+      "missionType" : "ATK",
+      "numSorties" : 9,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "7af606516c5a4227ac34712c76cb02d2",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 3
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "27d35f0a4dda459e879b8a26afaf94a0",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 3
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "1552a797cd3d47d1bd3c290018ab321b",
+        "numSorties" : 3,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 3
+      } ],
+      "unit" : "Unit24"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "4b20d6796b1b48508efbaa4e377055f8",
+      "missionType" : "ATK",
+      "numSorties" : 24,
+      "ownedBy" : "KSLC",
+      "platform" : "A10",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "1b089ff8f81a420cba2067ca63f75b69",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 2
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "01c75c8b342d4f4680cb29284d98d958",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "dca3dd6c2cc4474bbc0a3427a42da3f9",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 0
+      } ],
+      "unit" : "Unit25"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "e8791e050f024715880925cf22ca5505",
+      "missionType" : "CAS",
+      "numSorties" : 24,
+      "ownedBy" : "KSLC",
+      "platform" : "A10",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "958b69f5dad341568b31406c99ca58a3",
+        "numSorties" : 5,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 4
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KLUF",
+        "domainId" : "3055c3cafdfb4321878bb3c4603a9b6a",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 4
+      } ],
+      "unit" : "Unit25"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "7cb4419ddbea49d28ddb7523d3779f10",
+      "missionType" : "ATK",
+      "numSorties" : 36,
+      "ownedBy" : "KSLC",
+      "platform" : "B1B",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "f5ee2b514fcf469085c8c1a9603e5cf6",
+        "numSorties" : 8,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 6
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "35f173acc6fa4c4d984872a3880d94ed",
+        "numSorties" : 8,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 4
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "c00625e901b542ae94abd13f4a332546",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 0
+      } ],
+      "unit" : "Unit26"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "9c9e60d45c4b40aeb18c53030f9e0440",
+      "missionType" : "AI",
+      "numSorties" : 36,
+      "ownedBy" : "KSLC",
+      "platform" : "B1B",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "f0a745a919284cd6a03c0fdec9eda9e2",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 6
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "651a0336b7a74efe9ccbd16af1a9bb3d",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 0
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KSLC",
+        "domainId" : "e56d201e8df040ada0434e8e81cbe7a6",
+        "numSorties" : 4,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 2
+      } ],
+      "unit" : "Unit26"
+    }, {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "ade9ef8d619e4e17b3b7460e04ce7596",
+      "missionType" : "SEAD",
+      "numSorties" : 24,
+      "ownedBy" : "NIKE",
+      "platform" : "EA6B",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "NIKE",
+        "domainId" : "469ab08b937f4d26b2b327764fae10b2",
+        "numSorties" : 8,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 6
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "NIKE",
+        "domainId" : "cc00e613201d40dda0d9204c450777cb",
+        "numSorties" : 8,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 4
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "NIKE",
+        "domainId" : "0105d024357b45c7a51efb7554dd3ab6",
+        "numSorties" : 8,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 3
+      } ],
+      "unit" : "Unit27"
+    } ]
   },
-  "jsonV": "1.2"
+  "jsonV" : "1.2"
 };
 
 const units = data.domainObject.units;
