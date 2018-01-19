@@ -3,63 +3,9 @@ const _ = require('lodash');
 const requestData = require('../requests');
 const unitStatusSummaryData = require('../UnitStatusSummary');
 const io = require('../socketUtils');
-
-
-function createUnit(id) {
-  const date = new Date();
-  const startTime = date.getHours();
-  const endTime = date.getHours() + 4;
-
-  const timeSlots = [
-    {
-      id: 'timeSlot-'+1,
-      startTime: startTime,
-      endTime: endTime,
-      status: 'Available',
-      controlledBy: 'KABQ'
-    },
-    {
-      id: 'timeSlot-'+2,
-      startTime: startTime + 6,
-      endTime: endTime + 6,
-      status: 'Available',
-      controlledBy: 'KABQ'
-    }
-  ];
-
-  const assets = [
-    {
-      id: 'asset-'+1,
-      timeSlots: _.cloneDeep(timeSlots)
-    },
-    {
-      id: 'asset-'+2,
-      timeSlots: _.cloneDeep(timeSlots)
-    }
-  ];
-
-  const unit = _.assign({}, {
-    id: 'unit-' + id,
-    cell: 'KABQ',
-    unit: 'Unit ' + id,
-    platform: 'F-16C',
-    missionType: 'ATK',
-    used: 4,
-    available: 15,
-    total: 19,
-    assets: assets
-  });
-
-  return unit;
-}
+const moment = require('moment');
 
 function getScoreboardRouter() {
-  const tableData = [];
-  var i = 1;
-  for(i; i <= 15; i++) {
-    tableData.push(createUnit(i));
-  }
-
   let requestId = 4;
 
   const router = express.Router();
@@ -79,10 +25,10 @@ function getScoreboardRouter() {
       const sortieAssignment = _.find(req.body.unit.sortieAssignments, (assignment) => {
         const reserved = reservation.split('/');
         return assignment.domainId === _.last(reserved);
-      })
+      });
       const existingTurnWindow = _.find(newRequest.sorties, (sortie) => {
         return sortie.start === _.get(sortieAssignment, 'turnWindow.start', 'not equal') && sortie.end === _.get(sortieAssignment, 'turnWindow.end', 'not equal')
-      })
+      });
       if (existingTurnWindow){
         existingTurnWindow.quantity = existingTurnWindow.quantity + 1;
       } else {
@@ -94,7 +40,7 @@ function getScoreboardRouter() {
           }
         )
       }
-    })
+    });
     newRequest.fromCellId =
     newRequest.id = requestId;
     newRequest.received = new Date();
@@ -121,58 +67,53 @@ function getScoreboardRouter() {
         socket.emit('scoreboard_requests_update', requestData);
       }
     }
-
   });
 
-  router.post( '/requests/1', (req, res) => {
-    tableData[0] = {
-      id: 1,
-      cell: 'KABQ',
-      unit: 'Unit 1',
-      platform: 'F-16C',
-      missionType: 'ATK',
-      used: 7,
-      available: 12,
-      total: 19,
+  router.put('/requests/1', (req, res) => {
+    const newUnit = {
+      "@class" : ".UnitStatusImpl",
+      "domainId" : "1e94265d62594a4da5917a1b0a0db5ec",
+      "missionType" : "ATK",
+      "numSorties" : 19,
+      "ownedBy" : "KABQ",
+      "platform" : "F-16C",
+      "sortieAssignments" : [ {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "752d6b87773b4f009620c2a8cb94c273",
+        "numSorties" : 7,
+        "turnWindow" : {
+          "start" : "2017-03-01T06:00:00Z",
+          "end" : "2017-03-01T13:59:59Z"
+        },
+        "usedSorties" : 4
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "41205b0355a644ec8de24585dd01bab5",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T14:00:00Z",
+          "end" : "2017-03-01T21:59:59Z"
+        },
+        "usedSorties" : 2
+      }, {
+        "@class" : ".SortieAssignmentImpl",
+        "cellId" : "KABQ",
+        "domainId" : "deba314244404308afe2dccabbdb5b78",
+        "numSorties" : 6,
+        "turnWindow" : {
+          "start" : "2017-03-01T22:00:00Z",
+          "end" : "2017-03-02T05:59:59Z"
+        },
+        "usedSorties" : 1
+      } ],
+      "unit" : "Unit1"
     };
 
     res.send('success');
     const socket = io.get();
-    socket.emit('scoreboard_table_update', tableData);
-  });
-
-  router.post( '/requests/2', (req, res) => {
-    tableData[1] = {
-      id: 2,
-      cell: 'KABQ',
-      unit: 'Unit 2',
-      platform: 'F-16C',
-      missionType: 'ATK',
-      used: 5,
-      available: 0,
-      total: 5
-    };
-
-    res.send('success');
-    const socket = io.get();
-    socket.emit('scoreboard_table_update', tableData);
-  });
-
-  router.post( '/requests/3', (req, res) => {
-    tableData[2] = {
-      id: 3,
-      cell: 'KABQ',
-      unit: 'Unit 3',
-      platform: 'F-16C',
-      missionType: 'ATK',
-      used: 6,
-      available: 6,
-      total: 12
-    };
-
-    res.send('success');
-    const socket = io.get();
-    socket.emit('scoreboard_table_update', tableData);
+    socket.emit('scoreboard_row_update', newUnit);
   });
 
   return router;

@@ -10,8 +10,8 @@ const requests = [
     received: '11:30',
     status: 'Pending',
     sorties: [{
-      start: 120700,
-      end: 121300,
+      start: "2017-03-01T06:00:00Z",
+      end: "2017-03-01T13:59:59Z",
       quantity: 3
     }]
   },
@@ -26,8 +26,8 @@ const requests = [
     sent: '13:00',
     status: 'Approved',
     sorties: [{
-      start: 120700,
-      end: 121300,
+      start: "2017-03-01T06:00:00Z",
+      end: "2017-03-01T13:59:59Z",
       quantity: 13
     }]
   },
@@ -42,8 +42,8 @@ const requests = [
     created: '08:00',
     status: 'Not Sent',
     sorties: [{
-      start: 120700,
-      end: 121300,
+      start: "2017-03-01T06:00:00Z",
+      end: "2017-03-01T13:59:59Z",
       quantity: 23
     }]
   }
