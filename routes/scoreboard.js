@@ -3,7 +3,6 @@ const _ = require('lodash');
 const requestData = require('../requests');
 const unitStatusSummaryData = require('../UnitStatusSummary');
 const io = require('../socketUtils');
-const moment = require('moment');
 
 function getScoreboardRouter() {
   let requestId = 4;
