@@ -74,10 +74,31 @@ function getScoreboardRouter() {
 
   router.post('/requests', (req, res) => {
     const newRequest = req.body;
+    newRequest.sorties = [];
+    _.forEach(req.body.reservations, (reservation) => {
+      const sortieAssignment = _.find(req.body.unit.sortieAssignments, (assignment) => {
+        const reserved = reservation.split('/');
+        return assignment.domainId === reserved[reserved.length -1];
+      })
+      const existingTurnWindow = _.find(newRequest.sorties, (sortie) => {
+        return sortie.start === _.get(sortieAssignment, 'turnWindow.start', 'not equal') && sortie.end === _.get(sortieAssignment, 'turnWindow.end', 'not equal')
+      })
+      if (existingTurnWindow){
+        existingTurnWindow.quantity = existingTurnWindow.quantity + 1;
+      } else {
+        newRequest.sorties.push(
+          {
+            start: sortieAssignment.turnWindow.start,
+            end: sortieAssignment.turnWindow.end,
+            quantity: 1
+          }
+        )
+      }
+    })
+    newRequest.fromCellId =
     newRequest.id = requestId;
     newRequest.received = new Date();
     newRequest.status = 'Pending';
-
     requestData.push(newRequest);
     res.send('success');
     const socket = io.get();
@@ -112,7 +133,7 @@ function getScoreboardRouter() {
       missionType: 'ATK',
       used: 7,
       available: 12,
-      total: 19
+      total: 19,
     };
 
     res.send('success');
