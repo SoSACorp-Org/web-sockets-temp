@@ -5,7 +5,7 @@ const unitStatusSummaryData = require('../UnitStatusSummary');
 const io = require('../socketUtils');
 
 function getScoreboardRouter() {
-  let requestId = 4;
+  let requestId = 5;
 
   const router = express.Router();
 
@@ -40,7 +40,7 @@ function getScoreboardRouter() {
         )
       }
     });
-    newRequest.fromCellId =
+    newRequest.inbound = true;
     newRequest.id = requestId;
     newRequest.received = new Date();
     newRequest.status = 'Pending';
@@ -64,6 +64,29 @@ function getScoreboardRouter() {
 
         const socket = io.get();
         socket.emit('scoreboard_requests_update', requestData);
+      }
+    }
+  });
+
+  router.put('/request/update', (req, res) => {
+    const requestToUpdate = _.find(requestData, (request) => {
+      return (parseInt(request.id, 10) === parseInt(req.body.id, 10) && parseInt(request.id, 10) > 0)
+    });
+    if (requestToUpdate) {
+      requestToUpdate.status = req.body.status;
+      res.send('success');
+      const socket = io.get();
+      socket.emit('scoreboard_requests_update', requestData);
+      if (req.body.status === 'Approved') {
+        const newUnit = _.cloneDeep(req.body.unit);
+        _.forEach(requestToUpdate.reservations, (reservation) => {
+          const sortieAssignment = _.find(newUnit.sortieAssignments, (assignment) => {
+            const reserved = reservation.split('/');
+            return assignment.domainId === _.last(reserved);
+          });
+          sortieAssignment.usedSorties = sortieAssignment.usedSorties + 1
+        })
+        socket.emit('scoreboard_row_update', newUnit);
       }
     }
   });
