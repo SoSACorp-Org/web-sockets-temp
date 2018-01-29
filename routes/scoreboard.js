@@ -1,11 +1,12 @@
 const express = require('express');
 const _ = require('lodash');
+const moment = require('moment');
 const requestData = require('../requests');
 const unitStatusSummaryData = require('../UnitStatusSummary');
 const io = require('../socketUtils');
 
 function getScoreboardRouter() {
-  let requestId = 5;
+  let requestId = 1;
 
   const router = express.Router();
 
@@ -41,101 +42,39 @@ function getScoreboardRouter() {
       }
     });
     newRequest.inbound = true;
-    newRequest.id = requestId;
+    newRequest.domainId = requestId;
     newRequest.received = new Date();
     newRequest.status = 'Pending';
     requestData.push(newRequest);
     res.send('success');
     const socket = io.get();
-    socket.emit('scoreboard_requests_update', requestData);
+    socket.emit('scoreboard_request_update', newRequest);
     requestId++;
-  });
-
-  router.put('/requests', (req, res) => {
-    if (!req.body.id || !req.body.status) {
-      res.send('error, need request ID and status');
-    } else {
-      const request = _.find(requestData, reqObject => reqObject.id === req.body.id);
-      if (!request) {
-        res.send('error, no request with that ID');
-      } else {
-        request.status = req.body.status;
-        res.send('success');
-
-        const socket = io.get();
-        socket.emit('scoreboard_requests_update', requestData);
-      }
-    }
   });
 
   router.put('/request/update', (req, res) => {
     const requestToUpdate = _.find(requestData, (request) => {
-      return (parseInt(request.id, 10) === parseInt(req.body.id, 10) && parseInt(request.id, 10) > 0)
+      return (parseInt(request.domainId, 10) === parseInt(req.body.domainId, 10) && parseInt(request.domainId, 10) > 0)
     });
     if (requestToUpdate) {
       requestToUpdate.status = req.body.status;
       res.send('success');
       const socket = io.get();
-      socket.emit('scoreboard_requests_update', requestData);
+      socket.emit('scoreboard_request_update', requestToUpdate);
       if (req.body.status === 'Approved') {
         const newUnit = _.cloneDeep(req.body.unit);
+        newUnit.changeInReservation = -requestToUpdate.quantity;
+        newUnit.lastUpdate = moment().format();
         _.forEach(requestToUpdate.reservations, (reservation) => {
           const sortieAssignment = _.find(newUnit.sortieAssignments, (assignment) => {
             const reserved = reservation.split('/');
             return assignment.domainId === _.last(reserved);
           });
           sortieAssignment.usedSorties = sortieAssignment.usedSorties + 1
-        })
+        });
         socket.emit('scoreboard_row_update', newUnit);
       }
     }
-  });
-
-  router.put('/requests/1', (req, res) => {
-    const newUnit = {
-      "@class" : ".UnitStatusImpl",
-      "domainId" : "1e94265d62594a4da5917a1b0a0db5ec",
-      "missionType" : "ATK",
-      "numSorties" : 19,
-      "ownedBy" : "KABQ",
-      "platform" : "F-16C",
-      "sortieAssignments" : [ {
-        "@class" : ".SortieAssignmentImpl",
-        "cellId" : "KABQ",
-        "domainId" : "752d6b87773b4f009620c2a8cb94c273",
-        "numSorties" : 7,
-        "turnWindow" : {
-          "start" : "2017-03-01T06:00:00Z",
-          "end" : "2017-03-01T13:59:59Z"
-        },
-        "usedSorties" : 4
-      }, {
-        "@class" : ".SortieAssignmentImpl",
-        "cellId" : "KABQ",
-        "domainId" : "41205b0355a644ec8de24585dd01bab5",
-        "numSorties" : 6,
-        "turnWindow" : {
-          "start" : "2017-03-01T14:00:00Z",
-          "end" : "2017-03-01T21:59:59Z"
-        },
-        "usedSorties" : 2
-      }, {
-        "@class" : ".SortieAssignmentImpl",
-        "cellId" : "KABQ",
-        "domainId" : "deba314244404308afe2dccabbdb5b78",
-        "numSorties" : 6,
-        "turnWindow" : {
-          "start" : "2017-03-01T22:00:00Z",
-          "end" : "2017-03-02T05:59:59Z"
-        },
-        "usedSorties" : 1
-      } ],
-      "unit" : "Unit1"
-    };
-
-    res.send('success');
-    const socket = io.get();
-    socket.emit('scoreboard_row_update', newUnit);
   });
 
   return router;
