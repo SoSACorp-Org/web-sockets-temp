@@ -15,8 +15,8 @@ const data = {
           "domainId": "7820e5bc64874a0ea0e9c7f1a56abbbb",
           "numSorties": 4,
           "turnWindow": {
-            "start": "2017-09-04T18:00:00Z",
-            "end": "2017-09-04T22:30:00Z"
+            "start": "2017-03-01T18:00:00Z",
+            "end": "2017-03-01T22:30:00Z"
           },
           "usedSorties": 0
         },
@@ -26,8 +26,8 @@ const data = {
           "domainId": "1107c7299e7c48e4ba7d7fd2966b2087",
           "numSorties": 4,
           "turnWindow": {
-            "start": "2017-09-04T22:30:00Z",
-            "end": "2017-09-05T03:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         }
@@ -48,8 +48,8 @@ const data = {
           "domainId": "bfb1e99bbfab4753b5f1a48bdc218251",
           "numSorties": 2,
           "turnWindow": {
-            "start": "2017-09-04T18:00:00Z",
-            "end": "2017-09-04T22:30:00Z"
+            "start": "2017-03-01T05:00:00Z",
+            "end": "2017-03-01T17:30:00Z"
           },
           "usedSorties": 0
         },
@@ -59,8 +59,8 @@ const data = {
           "domainId": "b4ebab209cd747a891f26b888b7b8103",
           "numSorties": 2,
           "turnWindow": {
-            "start": "2017-09-04T22:30:00Z",
-            "end": "2017-09-05T03:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         },
@@ -70,8 +70,8 @@ const data = {
           "domainId": "5be14638145f4110ac90651302c8c118",
           "numSorties": 2,
           "turnWindow": {
-            "start": "2017-09-05T03:00:00Z",
-            "end": "2017-09-05T06:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         }
@@ -92,8 +92,8 @@ const data = {
           "domainId": "43716559e4b24c51994897e1f1627980",
           "numSorties": 3,
           "turnWindow": {
-            "start": "2017-09-04T22:00:00Z",
-            "end": "2017-09-05T06:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         },
@@ -103,8 +103,8 @@ const data = {
           "domainId": "0a0b0ff79e47451d87c5458a3d840e61",
           "numSorties": 3,
           "turnWindow": {
-            "start": "2017-09-04T14:00:00Z",
-            "end": "2017-09-04T22:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         },
@@ -114,8 +114,8 @@ const data = {
           "domainId": "6b0d82518ce54c6fb76b40896a397a51",
           "numSorties": 3,
           "turnWindow": {
-            "start": "2017-09-04T06:00:00Z",
-            "end": "2017-09-04T14:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         }
@@ -136,8 +136,8 @@ const data = {
           "domainId": "04b0158d672d4b8a8a1b19c6534ddcce",
           "numSorties": 14,
           "turnWindow": {
-            "start": "2017-09-04T18:00:00Z",
-            "end": "2017-09-05T00:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         },
@@ -147,8 +147,8 @@ const data = {
           "domainId": "80b68ea5ba8f4d90b44dd84e150c3bd1",
           "numSorties": 14,
           "turnWindow": {
-            "start": "2017-09-04T06:00:00Z",
-            "end": "2017-09-04T12:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         },
@@ -158,8 +158,8 @@ const data = {
           "domainId": "d4b9c4ea42e3468f90f00921ff1305c4",
           "numSorties": 14,
           "turnWindow": {
-            "start": "2017-09-04T12:00:00Z",
-            "end": "2017-09-04T18:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         },
@@ -169,8 +169,8 @@ const data = {
           "domainId": "92834d77042240ecb0d217dc9d8ff463",
           "numSorties": 12,
           "turnWindow": {
-            "start": "2017-09-05T00:00:00Z",
-            "end": "2017-09-05T06:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         }
@@ -191,8 +191,8 @@ const data = {
           "domainId": "2d7f773d0171434ba01861e62dff3158",
           "numSorties": 4,
           "turnWindow": {
-            "start": "2017-09-04T18:00:00Z",
-            "end": "2017-09-05T00:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         },
@@ -202,8 +202,8 @@ const data = {
           "domainId": "c36cf2da984d457ba2e5323604e704ea",
           "numSorties": 4,
           "turnWindow": {
-            "start": "2017-09-04T18:00:00Z",
-            "end": "2017-09-05T00:00:00Z"
+            "start": "2017-03-02T01:00:00Z",
+            "end": "2017-03-02T04:30:00Z"
           },
           "usedSorties": 0
         },
@@ -213,8 +213,8 @@ const data = {
           "domainId": "7d43ff595f6e432495835c7f2a21b166",
           "numSorties": 8,
           "turnWindow": {
-            "start": "2017-09-04T12:00:00Z",
-            "end": "2017-09-04T18:00:00Z"
+            "start": "2017-03-01T21:00:00Z",
+            "end": "2017-03-01T24:30:00Z"
           },
           "usedSorties": 0
         },
@@ -224,8 +224,8 @@ const data = {
           "domainId": "76dff99a84934d5abe5d15128fe39481",
           "numSorties": 8,
           "turnWindow": {
-            "start": "2017-09-04T12:00:00Z",
-            "end": "2017-09-04T18:00:00Z"
+            "start": "2017-03-01T11:00:00Z",
+            "end": "2017-03-01T19:30:00Z"
           },
           "usedSorties": 0
         },
